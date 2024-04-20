@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Queue</title>
+
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="stylesheet"
+            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      </head>
+<body>
+  <header>
+      <a href="#" class="logo"><img src="logo/queue logo 2.jpg" alt=""></a>
+
+    <nav>
+      <ul class="navbar">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#chapters">Chapters</a></li>
+        <li><a href="#user-review">User Review</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="home" id="overview">
+                  <div class="home-text">
+                        <h6>A queue is a fundamental data structure in computer science that follows the First In, First Out (FIFO) principle.</h6>
+                        <h2>Imagine a line of people waiting for something, like a bus or a movie ticket. The person who gets in line first (first in) is the first one to be served (first out). This is exactly how a queue works.</h2>
+                        
+                  </div>
+                  
+                  <div class="home-img">
+                        <img src="logo/queue wallpaper.webp" alt="">
+                  </div>
+            </section>
+      <ul class="accordion" id="chapters">
+        <li>
+          <input type="radio" name="accordion" id="first">
+          <label for="first">Introduction to Queues</label>
+          <div class="content">
+            <p><strong>Definition:</strong> Introduces the concept of queues as a linear data structure that follows the First-In-First-Out (FIFO) principle.<br>
+            <strong>➥ Key Characteristics:</strong><br>
+            Explains the key characteristics of queues, including their ordered nature and how elements are added to the rear (enqueue) and removed from the front (dequeue).<br>
+            <strong>➥ Operations:</strong>  Covers basic queue operations such as enqueue, dequeue, peek (viewing the front element without removing it), and isEmpty (checking if the queue is empty).<br>
+            <strong>➥ Implementation:</strong> Discusses different ways to implement queues, such as using arrays, linked lists, or circular arrays, highlighting the advantages and disadvantages of each approach.
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="second">
+          <label for="second">Queue Operations and Implementations</label>
+          <div class="content">
+            <p>
+              
+                  &nbsp;&nbsp;<strong>➥ Enqueue:</strong> Explains how elements are added to the rear of the queue.<br>
+                  &nbsp;&nbsp;<strong>➥ Dequeue:</strong> Describes how elements are removed from the front of the queue. <br>
+                  &nbsp;&nbsp;<strong>➥ Peek:</strong>Covers the operation of viewing the front element without removing it.<br>
+                  &nbsp;&nbsp;<strong>➥ isEmpty:</strong> Discusses how to check if the queue is empty.<br>
+                  &nbsp;&nbsp;<strong>➥ Fullness:</strong> Addresses scenarios where the queue may reach its maximum capacity and how to handle such cases.<br>
+                  &nbsp;&nbsp;<strong>➥ Implementation Details:</strong> Explores the implementation of queues using arrays, linked lists, or other data structures, including considerations for efficiency, memory usage, and time complexity of operations.
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="third">
+          <label for="third">Priority Queues and Heap Implementations</label>
+          <div class="content">
+            <p>
+                  &nbsp;&nbsp;<strong>➥ Priority Queues:</strong>  Introduces the concept of priority queues, where elements are dequeued based on their priority rather than their arrival order.<br>
+                  &nbsp;&nbsp;<strong>➥ Heap Data Structure:</strong> Discusses heap data structures (binary heaps, specifically), commonly used to implement priority queues efficiently.
+                  <br>
+                  &nbsp;&nbsp;<strong>➥ Heap Operations:</strong> Covers operations such as heapify, insert, extractMin/extractMax, and heap sort, which are essential for maintaining the heap property and performing efficient operations on heaps. <br>
+                  
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="fourth">
+          <label for="fourth">Queue Applications and Use Cases</label>
+          <div class="content">
+            <p>
+                  &nbsp;&nbsp;<strong>➥ Queue Applications and Use Cases</strong> Discusses how queues are used in operating systems for process scheduling algorithms like First-Come-First-Served (FCFS), Shortest Job Next (SJN), Round Robin (RR), etc. <br>
+                  &nbsp;&nbsp;<strong>➥ Networking:</strong> Explores how queues are used in networking for packet routing, traffic management, and quality of service (QoS) implementations. <br>
+                  &nbsp;&nbsp;<strong>➥ Simulation:</strong> Covers the use of queues in simulation for modeling and simulating systems with event-driven behaviors, such as customer service systems, traffic simulations, and manufacturing processes. <br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="fifith">
+          <label for="fifith">Deque (Double-Ended Queue) Implementations</label>
+          <div class="content">
+            <p>
+                  &nbsp;&nbsp;<strong>➥ Deque Definition:</strong> Introduces the concept of deques (double-ended queues), which support insertion and deletion at both ends.<br>
+                  &nbsp;&nbsp;<strong>➥ Operations:</strong> Covers operations such as insertFront, insertRear, deleteFront, deleteRear, peekFront, and peekRear, along with their implementations.<br>
+                  &nbsp;&nbsp;<strong>➥ Applications:</strong> Discusses applications of deques, including implementing data structures like stacks, queues, and other advanced algorithms that require efficient insertion and deletion at both ends.<br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="sixth">
+          <label for="sixth">Circular Queues and Ring Buffers</label>
+          <div class="content">
+            <p>
+                  &nbsp;&nbsp;<strong>➥ Circular Queues:</strong>  Explains the concept of circular queues, where the rear and front of the queue are connected in a circular manner, allowing for efficient use of memory and continuous cycling of elements.
+                  <br>
+                  &nbsp;&nbsp;<strong>➥ Ring Buffers:</strong>  Discusses ring buffers, which are practical applications of circular queues, commonly used in scenarios such as data buffering, communication systems, and audio/video processing.<br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="seventh">
+          <label for="seventh">Advanced Queue Techniques and Algorithms</label>
+          <div class="content">
+            <p> 
+                  
+                  &nbsp;&nbsp;<strong>➥ Parallel Processing:</strong> Explores how queues are used in parallel processing systems for task scheduling and load balancing.<br>
+                  &nbsp;&nbsp;<strong>➥ Distributed Computing:</strong>: Discusses the role of queues in distributed computing environments for message passing, task distribution, and synchronization.<br>
+                  &nbsp;&nbsp;<strong>➥ Optimization Techniques:</strong> Covers optimization techniques to improve the performance of queue-based systems, such as cache optimization, prefetching, and pipelining. <br>
+                  &nbsp;&nbsp;<strong>➥ Advanced Algorithms:</strong> Introduces advanced queue-based algorithms for specific problem domains, such as breadth-first search (BFS), depth-first search (DFS), and various graph algorithms that utilize queues for traversal.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+    
+    <section class="text-gray-600 body-font" id="user-review">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">20.7K</h2>
+            <p class="leading-relaxed">Users</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">30.8K</h2>
+            <p class="leading-relaxed">Likes</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">10.5k</h2>
+            <p class="leading-relaxed">Comments</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4</h2>
+            <p class="leading-relaxed">Articles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="main-btn1">
+    <a href="stack.html" class="btn1">Previous</a>
+    <a href="index.html" class="btn1">Go Back To Home</a>
+    <a href="tree.html" class="btn1">Next</a>
+</div>
+<div class="last-text">
+  <p>Ⓒ 2024 Team Qualyzer. All rights reserved.</p>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

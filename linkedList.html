@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Linked List</title>
+
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="stylesheet"
+            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      </head>
+<body>
+  <header>
+      <a href="#" class="logo"><img src="logo/linkedlist logo.jpg" alt=""></a>
+
+    <nav>
+      <ul class="navbar">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#chapters">Chapters</a></li>
+        <li><a href="#user-review">User Review</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="home" id="overview">
+                  <div class="home-text">
+                        <h6>Linked lists, unlike arrays, store data flexibly in connected nodes.</h6>
+                        <h2>Linear data structures where elements are not stored contiguously in memory. Each element, called a node, contains data and a reference (link) to the next node in the sequence, forming a chain-like structure.</h2>
+                        
+                  </div>
+                  
+                  <div class="home-img">
+                        <img src="logo/Linked-list.jpg" alt="">
+                  </div>
+            </section>
+      <ul class="accordion" id="chapters">
+        <li>
+          <input type="radio" name="accordion" id="first">
+          <label for="first">Introduction to Linked Lists</label>
+          <div class="content">
+            <p><strong>Definition:</strong> Linked lists are linear data structures where elements (nodes) are not stored contiguously in memory. Each node contains data and a reference (link) to the next node in the sequence, forming a chain-like structure.<br>
+            <strong>Benefits:</strong> <br>
+            &nbsp;&nbsp;<strong>➥ Dynamic Size:</strong> Linked lists can grow or shrink in size at runtime as needed, unlike fixed-size arrays.
+            <br>
+            &nbsp;&nbsp;<strong>➥ Efficient Insertions/Deletions:</strong> Inserting or deleting elements at any position is generally faster than arrays because no elements need to be shifted.
+            <br>
+              <strong>Drawbacks:</strong><br>
+              &nbsp;&nbsp;<strong>➥ Random Access:</strong> Accessing elements by index is slower than arrays as you need to traverse the list from the beginning until you reach the desired node.
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="second">
+          <label for="second">Linked List Operations and Manipulations</label>
+          <div class="content">
+            <p><strong>This section explores common operations performed on linked lists, including:</strong><br>
+              
+                <strong>➥ Traversal:</strong> Visiting each node in the list sequentially, typically using a loop and following the node links. <br>
+                <strong>➥ Searching:</strong> Finding a specific node with a particular data value by iterating through the list and comparing data fields. <br>
+                <strong>➥ Insertion:</strong> Adding a new node at the beginning (head), end (tail), or any specific position within the list. <br>
+                <strong>➥ Deletion:</strong> Removing a node based on its data value or reference. <br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="third">
+          <label for="third">Doubly Linked Lists</label>
+          <div class="content">
+            <p><strong>Standard linked lists</strong> only have a pointer to the next node. Doubly linked lists enhance this by adding another pointer in each node that points to the previous node in the list.<br>
+            <strong>Benefits:</strong> <br>
+            &nbsp;&nbsp;<strong>➥ Faster Deletions:</strong> Doubly linked lists allow for efficient deletion in one pass as you can access the previous node to update its link.<br>
+            &nbsp;&nbsp;<strong>➥ Bidirectional Traversal:</strong> You can traverse the list in both directions (forward and backward) by following the previous pointers.</p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="fourth">
+          <label for="fourth">Circular Linked Lists</label>
+          <div class="content">
+            <p><strong>Variation:</strong> In a circular linked list, the last node's next pointer points back to the first node, creating a closed loop. <br>
+              <strong>Applications:</strong><br>
+              &nbsp;&nbsp;<strong>➥ Circular Buffers:</strong>   Used to implement FIFO (First-In-First-Out) data structures where the oldest element is removed first.<br>
+              &nbsp;&nbsp;<strong>➥ Implementing Round-Robin Scheduling Algorithms:</strong> Useful for scheduling tasks that take turns using a resource. <br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="fifith">
+          <label for="fifith">Linked List Implementation and Memory Management</label>
+          <div class="content">
+            <p><strong>This section covers the details of implementing linked lists in code. It explores:</strong> <br>
+            <strong>➥ Node Structure:</strong> Defining the node data structure, typically containing a data field and pointers (next for singly linked lists, next and previous for doubly linked lists).<br>
+            <strong>➥ Memory Allocation:</strong> Managing memory allocation for nodes during insertions and potential deallocation during deletions to avoid memory leaks.<br>
+            <strong>➥ Head and Tail Pointers:</strong> Using head and tail pointers to efficiently track the beginning and end of the list, respectively. <br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="sixth">
+          <label for="sixth">Linked List Algorithms and Applications</label>
+          <div class="content">
+            <p> <strong>Linked lists are fundamental building blocks for various algorithms and data structures, including:</strong> <br>
+                  <strong>➥ Stacks:</strong>: LIFO (Last-In-First-Out) structures often implemented using singly linked lists with push and pop operations at the head (top).<br>
+                  <strong>➥ Queues:</strong> FIFO (First-In-First-Out) structures, sometimes implemented using singly linked lists with enqueue at the tail and dequeue at the head.<br>
+                  <strong>➥ Hash Tables:</strong> Use linked lists to handle collisions when multiple keys map to the same hash table slot.<br>
+                  <strong>➥ Graphs:</strong> Can be represented using linked lists where nodes store vertex data and pointers to adjacent nodes (representing edges).<br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="seventh">
+          <label for="seventh">Advanced Topics in Linked Lists</label>
+          <div class="content">
+            <p>
+                  <strong>This area explores more advanced concepts related to linked lists:</strong> <br>
+                  <strong>➥ Complexity Analysis:</strong> Understanding the time and space complexity of linked list operations compared to arrays.<br>
+                  <strong>➥ Circular Doubly Linked Lists:</strong>  A combination of doubly and circular linked lists, offering specific advantages for certain scenarios.<br>
+                  <strong>➥ Skip Lists:</strong> Specialized linked lists with additional levels to improve average-case search time complexity.<br>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+    
+    <section class="text-gray-600 body-font" id="user-review">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">20.7K</h2>
+            <p class="leading-relaxed">Users</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">30.8K</h2>
+            <p class="leading-relaxed">Likes</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">10.5k</h2>
+            <p class="leading-relaxed">Comments</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4</h2>
+            <p class="leading-relaxed">Articles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="main-btn1">
+    <a href="string.html" class="btn1">Previous</a>
+    <a href="index.html" class="btn1">Go Back To Home</a>
+    <a href="stack.html" class="btn1">Next</a>
+</div>
+<div class="last-text">
+  <p>Ⓒ 2024 Team Qualyzer. All rights reserved.</p>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Trees</title>
+
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="stylesheet"
+            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      </head>
+<body>
+  <header>
+      <a href="#" class="logo"><img src="logo/tree logo.png" alt=""></a>
+
+    <nav>
+      <ul class="navbar">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#chapters">Chapters</a></li>
+        <li><a href="#user-review">User Review</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="home" id="overview">
+                  <div class="home-text">
+                        <h6>Trees are another fundamental data structure in computer science.</h6>
+                        <h2>Trees are widely used for efficient searching, sorting, and organizing data. They excel in representing relationships between elements and are employed in various domains like file systems, social networks, and machine learning algorithms.</h2>
+                        
+                  </div>
+                  
+                  <div class="home-img">
+                        <img src="logo/tree.webp" alt="">
+                  </div>
+            </section>
+      <ul class="accordion" id="chapters">
+        <li>
+          <input type="radio" name="accordion" id="first">
+          <label for="first">Introduction to Trees</label>
+          <div class="content">
+            <p><strong>Definition:</strong> Trees are hierarchical data structures consisting of nodes connected by edges. They are widely used to represent hierarchical relationships and are characterized by a single root node, parent-child relationships, and leaf nodes.<br>
+            <strong>➥ Terminology:</strong><br>
+            Key terms include root, parent, child, sibling, leaf, subtree, depth, height, and level.<br>
+            <strong>➥ Types of Trees:</strong> Various types of trees include binary trees, n-ary trees, balanced trees, and specialized trees like binary search trees (BST) and AVL trees.<br>
+            <strong>➥ Basic Operations:</strong> Basic operations on trees include traversal (in-order, pre-order, post-order), insertion, deletion, and searching.
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="second">
+          <label for="second">Tree Traversal Techniques</label>
+          <div class="content">
+            <p>
+              
+                  &nbsp;&nbsp;<strong>➥ In-Order Traversal:</strong> Visit the left subtree, then the root node, and finally the right subtree.<br>
+                  &nbsp;&nbsp;<strong>➥ Pre-Order Traversal:</strong> Visit the root node, then the left subtree, and finally the right subtree.<br>
+                  &nbsp;&nbsp;<strong>➥ Post-Order Traversal:</strong> Visit the left subtree, then the right subtree, and finally the root node.<br>
+                  &nbsp;&nbsp;<strong>➥ Depth-First Search (DFS):</strong> A graph traversal technique that can be applied to trees using pre-order, in-order, or post-order traversal.<br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="third">
+          <label for="third">Binary Trees and Binary Search Trees (BST)</label>
+          <div class="content">
+            <p>
+                  &nbsp;&nbsp;<strong>➥ Binary Trees:</strong>  Each node in a binary tree can have at most two children: a left child and a right child.<br>
+                  &nbsp;&nbsp;<strong>➥ Binary Search Trees (BST):</strong> A binary tree where the left child of a node contains elements less than the node's value, and the right child contains elements greater than the node's value.
+                  <br>
+                  &nbsp;&nbsp;<strong>➥ Operations:</strong>  Insertion, deletion, and searching in a binary search tree are performed based on the binary search algorithm.<br>
+                  
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="fourth">
+          <label for="fourth">Balanced Binary Trees (AVL, Red-Black Trees)</label>
+          <div class="content">
+            <p>
+                  &nbsp;&nbsp;<strong>➥ AVL Trees:</strong>  A self-balancing binary search tree where the height difference between the left and right subtrees of any node is at most one.<br>
+                  &nbsp;&nbsp;<strong>➥ Red-Black Trees:</strong>  A self-balancing binary search tree with additional properties to ensure balanced height.<br>
+                  &nbsp;&nbsp;<strong>➥ Balancing Operations:</strong> Rotations are performed on AVL and red-black trees during insertion and deletion to maintain balance.
+                  <br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="fifith">
+          <label for="fifith">Tree Applications and Use Cases</label>
+          <div class="content">
+            <p>
+                  &nbsp;&nbsp;<strong>➥ Binary Heap:</strong>  A complete binary tree commonly used to implement priority queues efficiently.<br>
+                  &nbsp;&nbsp;<strong>➥ Huffman Coding:</strong>  A compression algorithm that uses binary trees to achieve lossless data compression.<br>
+                  &nbsp;&nbsp;<strong>➥ Expression Trees:</strong>  Trees used to represent mathematical expressions and evaluate them efficiently.<br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="sixth">
+          <label for="sixth">Tree Algorithms and Advanced Topics</label>
+          <div class="content">
+            <p>
+                  &nbsp;&nbsp;<strong>➥ Lowest Common Ancestor (LCA):</strong> An algorithm to find the lowest common ancestor of two nodes in a tree.
+                  <br>
+                  &nbsp;&nbsp;<strong>➥ Tree Diameter:</strong>   An algorithm to find the longest path (diameter) in a tree.<br>
+                  &nbsp;&nbsp;<strong>➥ Segment Trees:</strong>    A data structure used for range queries and updates on an array.<br>
+            </p>
+          </div>
+        </li>
+        <li>
+          <input type="radio" name="accordion" id="seventh">
+          <label for="seventh">Graphs and Tree Representations</label>
+          <div class="content">
+            <p> 
+                  
+                  &nbsp;&nbsp;<strong>➥ Trees as Graphs:</strong>  Trees are a special type of acyclic graph with no cycles or loops.<br>
+                  &nbsp;&nbsp;<strong>➥ Tree Representations:</strong>: Trees can be represented using adjacency lists, adjacency matrices, or parent-child pointers.<br>
+                  &nbsp;&nbsp;<strong>➥ Conversion:</strong> Algorithms exist for converting trees to graphs and vice versa, depending on the application requirements.<br>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+    
+    <section class="text-gray-600 body-font" id="user-review">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">20.7K</h2>
+            <p class="leading-relaxed">Users</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">30.8K</h2>
+            <p class="leading-relaxed">Likes</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">10.5k</h2>
+            <p class="leading-relaxed">Comments</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4</h2>
+            <p class="leading-relaxed">Articles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="main-btn1">
+    <a href="queue.html" class="btn1">Previous</a>
+    <a href="index.html" class="btn1">Go Back To Home</a>
+    <a href="graph.html" class="btn1">Next</a>
+</div>
+<div class="last-text">
+  <p>Ⓒ 2024 Team Qualyzer. All rights reserved.</p>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
